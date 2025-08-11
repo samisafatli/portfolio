@@ -4,11 +4,9 @@ import Contact from "./Contact";
 import { CONTACT_CONSTANTS } from "./constants";
 
 describe("Contact", () => {
-  it("renders section title and contact info", () => {
+  it("renders heading and contact links", () => {
     render(<Contact />);
-    expect(
-      screen.getByText(CONTACT_CONSTANTS.sectionTitle),
-    ).toBeInTheDocument();
     expect(screen.getByText(CONTACT_CONSTANTS.heading)).toBeInTheDocument();
+    expect(screen.getByText(CONTACT_CONSTANTS.links[0].text)).toBeInTheDocument();
   });
 });
