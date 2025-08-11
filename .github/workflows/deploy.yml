@@ -31,6 +31,14 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_BASE: "/"
+          
+      - name: Create 404 fallback for SPA
+        run: cp dist/index.html dist/404.html
+        
+      - name: Add CNAME for custom domain
+        run: echo "samisafatli.com" > dist/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
