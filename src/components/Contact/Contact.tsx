@@ -7,11 +7,9 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2 className="section-title">{CONTACT_CONSTANTS.sectionTitle}</h2>
+        <h2 className="section-title">{CONTACT_CONSTANTS.heading}</h2>
         <div className="contact-content">
           <div className="contact-info">
-            <h3>{CONTACT_CONSTANTS.heading}</h3>
-            <p>{CONTACT_CONSTANTS.description}</p>
             <div className="contact-links">
               {CONTACT_CONSTANTS.links.map((link, index) =>
                 link.external ? (

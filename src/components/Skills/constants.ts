@@ -11,6 +11,8 @@ export const SKILLS_CONSTANTS = {
       skills: [
         "React",
         "React Native",
+        "Next.js",
+        "Vue.js",
         "JavaScript",
         "TypeScript",
         "HTML",
@@ -23,7 +25,7 @@ export const SKILLS_CONSTANTS = {
     },
     {
       category: "DevOps",
-      skills: ["CI/CD", "Git", "Azure", "Split.io"],
+      skills: ["CI/CD", "Git", "Azure", "Split.io", "Docker", "AWS", "DevOps",],
     },
     {
       category: "Databases",

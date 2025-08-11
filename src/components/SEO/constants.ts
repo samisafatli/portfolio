@@ -2,7 +2,7 @@ export const SEO_CONSTANTS = {
   siteName: "Sami Safatli - Software Engineer",
   defaultTitle: "Sami Safatli - Software Engineer Portfolio",
   defaultDescription:
-    "Experienced Software Engineer with 5+ years specializing in React, React Native, Node.js, and TypeScript. Currently at Zé Delivery, previously at PayPal, Globo, and Yduqs.",
+    "Experienced Software Engineer with 7+ years specializing in React, React Native, Node.js, and TypeScript. Currently at Zé Delivery, previously at PayPal, Globo, and Yduqs.",
   defaultKeywords:
     "Sami Safatli, Software Engineer, React Developer, React Native, TypeScript, Node.js, Frontend Developer, Backend Developer, Mobile Developer, JavaScript, Brazil, Rio de Janeiro, PayPal, Globo, Yduqs, Zé Delivery",
   defaultImage: "/slogo.png",
@@ -12,12 +12,12 @@ export const SEO_CONSTANTS = {
     home: {
       title: "Home",
       description:
-        "Software Engineer Portfolio - 5+ years of experience building scalable web and mobile applications with React, React Native, and Node.js",
+        "Software Engineer Portfolio - 7+ years of experience building scalable web and mobile applications with React, React Native, and Node.js",
     },
     about: {
       title: "About",
       description:
-        "Learn more about Sami Safatli - Software Engineer with experience at leading companies like PayPal, Globo, and Yduqs",
+        "Learn more about Sami Safatli - Software Engineer with experience at leading companies like PayPal, Globo, and Yduqs and Zé Delivery",
     },
     experience: {
       title: "Experience",
@@ -40,4 +40,4 @@ export const SEO_CONSTANTS = {
         "Get in touch for opportunities and collaborations - Based in Rio de Janeiro, Brazil",
     },
   },
-};
+} as const;

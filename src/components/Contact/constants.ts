@@ -6,10 +6,7 @@ export interface ContactLink {
 }
 
 export const CONTACT_CONSTANTS = {
-  sectionTitle: "Get In Touch",
   heading: "Let's Connect",
-  description:
-    "I'm always interested in hearing about new opportunities and exciting projects. Feel free to reach out if you'd like to discuss how we can work together.",
   links: [
     {
       href: "mailto:samisafatli@live.com",
