@@ -55,12 +55,11 @@ export const EXPERIENCE_CONSTANTS = {
       ],
     },
     {
-      company: "HarryCode & Ipiranga",
-      position: "Programming Instructor & Intern",
+      company: "HappyCode",
+      position: "Game Development Instructor",
       period: "2017 - 2019",
       description: [
         "Taught game programming fundamentals and logic building",
-        "Completed software development internship at Ipiranga",
       ],
     },
   ] as ExperienceItem[],
