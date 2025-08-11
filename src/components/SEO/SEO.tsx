@@ -56,7 +56,6 @@ const SEO: React.FC<SEOProps> = ({
         sizes="180x180"
         href="/apple-touch-icon.png"
       />
-      <link rel="manifest" href="/site.webmanifest" />
 
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
