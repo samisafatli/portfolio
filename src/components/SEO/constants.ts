@@ -3,11 +3,9 @@ export const SEO_CONSTANTS = {
   defaultTitle: "Sami Safatli - Software Engineer Portfolio",
   defaultDescription: "Experienced Software Engineer with 5+ years specializing in React, React Native, Node.js, and TypeScript. Currently at Zé Delivery, previously at PayPal, Globo, and Yduqs.",
   defaultKeywords: "Sami Safatli, Software Engineer, React Developer, React Native, TypeScript, Node.js, Frontend Developer, Backend Developer, Mobile Developer, JavaScript, Brazil, Rio de Janeiro, PayPal, Globo, Yduqs, Zé Delivery",
-  defaultImage: "/og-image.jpg", // You'll need to add this image to public folder
-  defaultUrl: "https://samisafatli.dev", // Replace with your actual domain
+  defaultImage: "/slogo.png",
+  defaultUrl: "https://samisafatli.dev",
   author: "Sami Safatli",
-  twitterHandle: "@samisafatli", // Replace with your actual Twitter handle if you have one
-  
   pages: {
     home: {
       title: "Home",
@@ -34,4 +32,4 @@ export const SEO_CONSTANTS = {
       description: "Get in touch for opportunities and collaborations - Based in Rio de Janeiro, Brazil"
     }
   }
-} as const
+}
