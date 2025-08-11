@@ -69,18 +69,6 @@ src/
 5. **Education** - Formação acadêmica
 6. **Contact** - Informações de contato e links
 
-## 🌐 Deploy
-
-O projeto está configurado para deploy fácil em plataformas como:
-- Vercel
-- Netlify
-- GitHub Pages
-- Heroku
-
-## 📄 Licença
-
-Este projeto é de uso pessoal para fins de portfólio.
-
 ## 📞 Contato
 
 - **Email**: samisafatli@live.com
