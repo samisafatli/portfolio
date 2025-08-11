@@ -54,5 +54,14 @@ export const EXPERIENCE_CONSTANTS = {
         "Contributed to content distribution systems using Node.js, Golang, and Python",
       ],
     },
+    {
+      company: "HarryCode & Ipiranga",
+      position: "Programming Instructor & Intern",
+      period: "2017 - 2019",
+      description: [
+        "Taught game programming fundamentals and logic building",
+        "Completed software development internship at Ipiranga",
+      ],
+    },
   ] as ExperienceItem[],
 } as const;
