@@ -1,7 +1,7 @@
-import React from 'react'
-import { CONTACT_CONSTANTS } from './constants'
-import ContactIcon from './ContactIcon'
-import './Contact.css'
+import React from "react";
+import { CONTACT_CONSTANTS } from "./constants";
+import ContactIcon from "./ContactIcon";
+import "./Contact.css";
 
 const Contact: React.FC = () => {
   return (
@@ -13,38 +13,36 @@ const Contact: React.FC = () => {
             <h3>{CONTACT_CONSTANTS.heading}</h3>
             <p>{CONTACT_CONSTANTS.description}</p>
             <div className="contact-links">
-              {CONTACT_CONSTANTS.links.map((link, index) => (
+              {CONTACT_CONSTANTS.links.map((link, index) =>
                 link.external ? (
-                  <a 
+                  <a
                     key={index}
-                    href={link.href} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="contact-link"
                   >
                     <ContactIcon type={link.icon} className="icon" />
                     {link.text}
                   </a>
+                ) : link.href === "#" ? (
+                  <div key={index} className="contact-link">
+                    <ContactIcon type={link.icon} className="icon" />
+                    {link.text}
+                  </div>
                 ) : (
-                  link.href === "#" ? (
-                    <div key={index} className="contact-link">
-                      <ContactIcon type={link.icon} className="icon" />
-                      {link.text}
-                    </div>
-                  ) : (
-                    <a key={index} href={link.href} className="contact-link">
-                      <ContactIcon type={link.icon} className="icon" />
-                      {link.text}
-                    </a>
-                  )
-                )
-              ))}
+                  <a key={index} href={link.href} className="contact-link">
+                    <ContactIcon type={link.icon} className="icon" />
+                    {link.text}
+                  </a>
+                ),
+              )}
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

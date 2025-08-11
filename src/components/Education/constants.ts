@@ -1,7 +1,7 @@
 export interface EducationItem {
-  degree: string
-  institution: string
-  period: string
+  degree: string;
+  institution: string;
+  period: string;
 }
 
 export const EDUCATION_CONSTANTS = {
@@ -10,12 +10,12 @@ export const EDUCATION_CONSTANTS = {
     {
       degree: "Postgraduate - Project Management",
       institution: "University Estácio de Sá",
-      period: "2024"
+      period: "2024",
     },
     {
       degree: "Bachelor - Information Systems",
       institution: "University of Veiga de Almeida",
-      period: "2018 - 2022"
-    }
-  ] as EducationItem[]
-} as const
+      period: "2018 - 2022",
+    },
+  ] as EducationItem[],
+} as const;

@@ -7,14 +7,18 @@
 }
 
 .skills::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    linear-gradient(135deg, transparent 0%, rgba(0, 210, 255, 0.02) 50%, transparent 100%);
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(0, 210, 255, 0.02) 50%,
+    transparent 100%
+  );
   pointer-events: none;
 }
 
@@ -36,13 +40,17 @@
 }
 
 .skill-category::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -63,7 +71,7 @@
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 2rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -71,7 +79,7 @@
 }
 
 .category-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -98,20 +106,25 @@
   border: 1px solid var(--light-gray);
   font-size: 0.9rem;
   font-weight: 500;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
 .skill-tag::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 210, 255, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 210, 255, 0.1),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -130,21 +143,21 @@
   .skills {
     padding: 4rem 0;
   }
-  
+
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .skill-category {
     padding: 2rem;
   }
-  
+
   .category-title {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .skill-tag {
     padding: 0.6rem 1rem;
     font-size: 0.8rem;

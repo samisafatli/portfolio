@@ -1,6 +1,6 @@
-import React from 'react'
-import { EDUCATION_CONSTANTS } from './constants'
-import './Education.css'
+import React from "react";
+import { EDUCATION_CONSTANTS } from "./constants";
+import "./Education.css";
 
 const Education: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const Education: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

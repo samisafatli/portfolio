@@ -1,6 +1,6 @@
-import React from 'react'
-import { EXPERIENCE_CONSTANTS } from './constants'
-import './Experience.css'
+import React from "react";
+import { EXPERIENCE_CONSTANTS } from "./constants";
+import "./Experience.css";
 
 const Experience: React.FC = () => {
   return (
@@ -9,7 +9,10 @@ const Experience: React.FC = () => {
         <h2 className="section-title">{EXPERIENCE_CONSTANTS.sectionTitle}</h2>
         <div className="timeline">
           {EXPERIENCE_CONSTANTS.experiences.map((exp, index) => (
-            <div key={index} className={`timeline-item ${exp.current ? 'current' : ''}`}>
+            <div
+              key={index}
+              className={`timeline-item ${exp.current ? "current" : ""}`}
+            >
               <div className="timeline-content">
                 <h3 className="company">{exp.company}</h3>
                 <h4 className="position">{exp.position}</h4>
@@ -25,7 +28,7 @@ const Experience: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

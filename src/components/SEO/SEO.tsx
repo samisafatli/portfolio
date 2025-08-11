@@ -1,14 +1,14 @@
-import React from 'react'
-import { Helmet } from 'react-helmet-async'
-import { SEO_CONSTANTS } from './constants'
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { SEO_CONSTANTS } from "./constants";
 
 interface SEOProps {
-  title?: string
-  description?: string
-  keywords?: string
-  image?: string
-  url?: string
-  type?: string
+  title?: string;
+  description?: string;
+  keywords?: string;
+  image?: string;
+  url?: string;
+  type?: string;
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -17,11 +17,11 @@ const SEO: React.FC<SEOProps> = ({
   keywords = SEO_CONSTANTS.defaultKeywords,
   image = SEO_CONSTANTS.defaultImage,
   url = SEO_CONSTANTS.defaultUrl,
-  type = 'website'
+  type = "website",
 }) => {
-  const fullTitle = title 
-    ? `${title} | ${SEO_CONSTANTS.siteName}` 
-    : SEO_CONSTANTS.defaultTitle
+  const fullTitle = title
+    ? `${title} | ${SEO_CONSTANTS.siteName}`
+    : SEO_CONSTANTS.defaultTitle;
 
   return (
     <Helmet>
@@ -48,57 +48,82 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="theme-color" content="#00d2ff" />
       <meta name="msapplication-TileColor" content="#00d2ff" />
       <meta name="application-name" content={SEO_CONSTANTS.siteName} />
-      
+
       <link rel="canonical" href={url} />
-      
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
       <link rel="manifest" href="/site.webmanifest" />
-      
+
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
+
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          "name": "Sami Safatli",
-          "jobTitle": "Software Engineer",
-          "url": url,
-          "image": image,
-          "sameAs": [
+          name: "Sami Safatli",
+          jobTitle: "Software Engineer",
+          url: url,
+          image: image,
+          sameAs: [
             "https://www.linkedin.com/in/safatlisami/",
-            "https://github.com/samisafatli"
+            "https://github.com/samisafatli",
           ],
-          "worksFor": {
+          worksFor: {
             "@type": "Organization",
-            "name": "Zé Delivery"
+            name: "Zé Delivery",
           },
-          "alumniOf": [
+          alumniOf: [
             {
               "@type": "EducationalOrganization",
-              "name": "University of Veiga de Almeida"
+              name: "University of Veiga de Almeida",
             },
             {
-              "@type": "EducationalOrganization", 
-              "name": "University Estácio de Sá"
-            }
+              "@type": "EducationalOrganization",
+              name: "University Estácio de Sá",
+            },
           ],
-          "knowsAbout": [
-            "React", "React Native", "TypeScript", "Node.js", 
-            "JavaScript", "Software Engineering", "Mobile Development",
-            "Web Development", "Frontend Development", "Backend Development"
+          knowsAbout: [
+            "React",
+            "React Native",
+            "TypeScript",
+            "Node.js",
+            "JavaScript",
+            "Software Engineering",
+            "Mobile Development",
+            "Web Development",
+            "Frontend Development",
+            "Backend Development",
           ],
-          "address": {
+          address: {
             "@type": "PostalAddress",
-            "addressLocality": "Rio de Janeiro",
-            "addressCountry": "Brazil"
-          }
+            addressLocality: "Rio de Janeiro",
+            addressCountry: "Brazil",
+          },
         })}
       </script>
     </Helmet>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

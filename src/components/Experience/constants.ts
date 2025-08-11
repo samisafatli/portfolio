@@ -1,9 +1,9 @@
 export interface ExperienceItem {
-  company: string
-  position: string
-  period: string
-  description: string[]
-  current?: boolean
+  company: string;
+  position: string;
+  period: string;
+  description: string[];
+  current?: boolean;
 }
 
 export const EXPERIENCE_CONSTANTS = {
@@ -18,8 +18,8 @@ export const EXPERIENCE_CONSTANTS = {
         "Developed and maintained key post-purchase features to improve the user journey after checkout",
         "Built delivery tracking, notifications, and customer support flows",
         "Collaborated with cross-functional teams to increase customer satisfaction through data-driven UX improvements",
-        "Applied engineering best practices including code reviews, CI/CD pipelines, and automated testing"
-      ]
+        "Applied engineering best practices including code reviews, CI/CD pipelines, and automated testing",
+      ],
     },
     {
       company: "Yduqs",
@@ -29,8 +29,8 @@ export const EXPERIENCE_CONSTANTS = {
         "Owned the full student journey within the largest university app in Brazil",
         "Developed critical mobile flows using React Native and Firebase",
         "Integrated backend logic and handled real-time data operations across services",
-        "Worked in Agile squads, actively participating in sprint planning and code reviews"
-      ]
+        "Worked in Agile squads, actively participating in sprint planning and code reviews",
+      ],
     },
     {
       company: "PayPal",
@@ -40,8 +40,8 @@ export const EXPERIENCE_CONSTANTS = {
         "Contributed to global features like PayPal.Me and Crowdfunding",
         "Ensured stable rollout during the app migration phase",
         "Refactored frontend components and improved performance across shared React-based systems",
-        "Maintained automated test coverage using Cypress"
-      ]
+        "Maintained automated test coverage using Cypress",
+      ],
     },
     {
       company: "Globo",
@@ -51,8 +51,8 @@ export const EXPERIENCE_CONSTANTS = {
         "Developed internal systems for editorial content creation, including a CMS used by Globo's content teams",
         "Built reusable and responsive UI components in React for critical company platforms",
         "Delivered interactive features like real-time voting and commenting systems",
-        "Contributed to content distribution systems using Node.js, Golang, and Python"
-      ]
-    }
-  ] as ExperienceItem[]
-} as const
+        "Contributed to content distribution systems using Node.js, Golang, and Python",
+      ],
+    },
+  ] as ExperienceItem[],
+} as const;

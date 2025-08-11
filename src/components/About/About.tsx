@@ -1,6 +1,6 @@
-import React from 'react'
-import { ABOUT_CONSTANTS } from './constants'
-import './About.css'
+import React from "react";
+import { ABOUT_CONSTANTS } from "./constants";
+import "./About.css";
 
 const About: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const About: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

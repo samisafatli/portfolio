@@ -22,6 +22,7 @@ Um portfólio moderno e responsivo desenvolvido em React + TypeScript, apresenta
 ## 📦 Instalação e Execução
 
 ### Pré-requisitos
+
 - Node.js (versão 20 ou superior)
 - npm ou yarn
 

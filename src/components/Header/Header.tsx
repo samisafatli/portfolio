@@ -1,6 +1,6 @@
-import React from 'react'
-import { HEADER_CONSTANTS } from './constants'
-import './Header.css'
+import React from "react";
+import { HEADER_CONSTANTS } from "./constants";
+import "./Header.css";
 
 const Header: React.FC = () => {
   return (
@@ -9,14 +9,18 @@ const Header: React.FC = () => {
         <div className="hero">
           <h1 className="name">{HEADER_CONSTANTS.name}</h1>
           <h2 className="title">{HEADER_CONSTANTS.title}</h2>
-          <p className="subtitle">
-            {HEADER_CONSTANTS.subtitle}
-          </p>
+          <p className="subtitle">{HEADER_CONSTANTS.subtitle}</p>
           <div className="cta-buttons">
-            <a href={HEADER_CONSTANTS.links.contact} className="btn btn-primary">
+            <a
+              href={HEADER_CONSTANTS.links.contact}
+              className="btn btn-primary"
+            >
               {HEADER_CONSTANTS.buttons.contact}
             </a>
-            <a href={HEADER_CONSTANTS.links.experience} className="btn btn-secondary">
+            <a
+              href={HEADER_CONSTANTS.links.experience}
+              className="btn btn-secondary"
+            >
               {HEADER_CONSTANTS.buttons.viewWork}
             </a>
           </div>
@@ -24,7 +28,7 @@ const Header: React.FC = () => {
         <div className="scroll-indicator">↓</div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

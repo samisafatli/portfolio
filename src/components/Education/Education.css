@@ -7,15 +7,23 @@
 }
 
 .education::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 30% 40%, rgba(0, 210, 255, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 70% 80%, rgba(0, 153, 204, 0.03) 0%, transparent 50%);
+  background:
+    radial-gradient(
+      circle at 30% 40%,
+      rgba(0, 210, 255, 0.03) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 80%,
+      rgba(0, 153, 204, 0.03) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 
@@ -39,26 +47,34 @@
 }
 
 .education-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
 }
 
 .education-card::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   right: 20px;
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   opacity: 0.1;
   transition: all 0.3s ease;
@@ -85,7 +101,7 @@
   color: var(--text-primary);
   margin-bottom: 1.5rem;
   line-height: 1.4;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -100,7 +116,7 @@
 }
 
 .institution::before {
-  content: '◆';
+  content: "◆";
   position: absolute;
   left: 0;
   color: var(--primary-blue);
@@ -110,7 +126,7 @@
 .period {
   font-size: 0.9rem;
   color: var(--text-secondary);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 500;
   padding: 0.8rem 1.5rem;
   background: var(--dark-gray);
@@ -122,27 +138,27 @@
   .education {
     padding: 4rem 0;
   }
-  
+
   .education-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .education-card {
     padding: 2.5rem;
   }
-  
+
   .degree {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-  
+
   .institution {
     font-size: 1rem;
     margin-bottom: 1rem;
     padding-left: 1.5rem;
   }
-  
+
   .period {
     padding: 0.6rem 1rem;
   }

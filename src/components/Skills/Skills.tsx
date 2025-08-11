@@ -1,6 +1,6 @@
-import React from 'react'
-import { SKILLS_CONSTANTS } from './constants'
-import './Skills.css'
+import React from "react";
+import { SKILLS_CONSTANTS } from "./constants";
+import "./Skills.css";
 
 const Skills: React.FC = () => {
   return (
@@ -13,7 +13,9 @@ const Skills: React.FC = () => {
               <h3 className="category-title">{category.category}</h3>
               <div className="skills-list">
                 {category.skills.map((skill, i) => (
-                  <span key={i} className="skill-tag">{skill}</span>
+                  <span key={i} className="skill-tag">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
@@ -21,7 +23,7 @@ const Skills: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
