@@ -17,11 +17,6 @@ export const CONTACT_CONSTANTS = {
       text: "samisafatli@live.com",
     },
     {
-      href: "tel:+5521995076892",
-      icon: "phone",
-      text: "+55 21 99507-6892",
-    },
-    {
       href: "https://www.linkedin.com/in/safatlisami/",
       icon: "linkedin",
       text: "LinkedIn",
