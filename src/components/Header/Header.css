@@ -1,5 +1,5 @@
 .header {
-  background: var(--black);
+  background: transparent;
   color: var(--text-primary);
   padding: 8rem 0;
   text-align: center;
@@ -12,27 +12,7 @@
   justify-content: center;
 }
 
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(
-      circle at 20% 50%,
-      rgba(0, 210, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(0, 153, 204, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(circle at 40% 80%, rgba(0, 61, 82, 0.1) 0%, transparent 50%);
-  animation: float 6s ease-in-out infinite;
-}
+/* .header::before removed to show global gradient */
 
 @keyframes float {
   0%,

@@ -25,7 +25,7 @@ const Header: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="scroll-indicator">↓</div>
+        <div className="scroll-indicator">⋮</div>
       </div>
     </header>
   );

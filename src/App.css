@@ -42,7 +42,13 @@ body {
     sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
-  background: var(--black);
+  background: linear-gradient(
+    90deg,
+    var(--black) 0%,
+    var(--dark-gray) 50%,
+    var(--black) 100%
+  );
+  background-attachment: fixed;
   scroll-behavior: smooth;
   width: 100%;
   min-height: 100vh;
