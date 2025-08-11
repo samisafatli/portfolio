@@ -1,78 +1,92 @@
-# Sami Safatli - Portfolio
+<div align="center">
 
-Um portfólio moderno e responsivo desenvolvido em React + TypeScript, apresentando a experiência profissional, habilidades e educação de Sami Safatli, Software Engineer.
+# Sami Safatli
 
-## 🚀 Tecnologias Utilizadas
+### *Software Engineer*
 
-- **React 19** - Biblioteca para construção da interface
-- **TypeScript** - Tipagem estática para JavaScript
-- **Vite** - Build tool moderna e rápida
-- **CSS3** - Estilização moderna com gradients e animações
-- **HTML5** - Marcação semântica
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-samisafatli.com-00d2ff?style=for-the-badge&logo=github-pages)](https://samisafatli.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/samisafatli/portfolio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/safatlisami/)
 
-## 🎨 Características
 
-- ✨ Design moderno e responsivo
-- 🎭 Animações suaves e transições
-- 📱 Mobile-first approach
-- 🎨 Paleta de cores profissional
-- ⚡ Performance otimizada
-- 🔍 SEO-friendly
+</div>
 
-## 📦 Instalação e Execução
+---
 
-### Pré-requisitos
+## 🛠️ Tech Stack
 
-- Node.js (versão 20 ou superior)
-- npm ou yarn
+<div align="center">
 
-### Comandos
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Hosting-222222?style=for-the-badge&logo=github-pages&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-Testing-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+
+</div>
+
+## 🏗️ Project Structure
+
+```
+portfolio/
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── About/ 
+│   │   ├── Experience/
+│   │   ├── Skills/
+│   │   ├── Education/       
+│   │   ├── Contact/      
+│   │   ├── SEO/
+│   │   └── Cursor/
+│   ├── App.tsx 
+│   ├── App.css 
+│   └── main.tsx
+├── public/       
+├── .github/workflows/
+└── vite.config.ts
+```
+
+## Quick Start
+
+### Prerequisites
+
+- **Node.js** 22.12.0+ (LTS recommended)
+- **npm** or **yarn**
+
+### Installation & Development
 
 ```bash
-# Instalar dependências
-npm install
+    git clone https://github.com/samisafatli/portfolio.git
+    cd portfolio
 
-# Executar em modo de desenvolvimento
-npm run dev
+    npm install
 
-# Build para produção
-npm run build
-
-# Preview da build de produção
-npm run preview
-
-# Linting
-npm run lint
+    npm run dev
 ```
 
-## 📁 Estrutura do Projeto
+### Build & Deploy
 
+```bash
+    npm test
+
+    npm run build
+
+    npm run preview
+
+    git push origin main
 ```
-src/
-├── components/          # Componentes React
-│   ├── Header/         # Cabeçalho com hero section
-│   ├── About/          # Seção sobre
-│   ├── Experience/     # Experiência profissional
-│   ├── Skills/         # Habilidades técnicas
-│   ├── Education/      # Formação acadêmica
-│   └── Contact/        # Informações de contato
-├── App.tsx             # Componente principal
-├── App.css             # Estilos globais
-└── main.tsx            # Ponto de entrada
-```
+</div>
 
-## 🎯 Seções do Portfólio
+---
 
-1. **Header** - Apresentação principal com call-to-actions
-2. **About** - Biografia e estatísticas profissionais
-3. **Experience** - Timeline de experiência profissional
-4. **Skills** - Tecnologias e habilidades organizadas por categoria
-5. **Education** - Formação acadêmica
-6. **Contact** - Informações de contato e links
+<div align="center">
 
-## 📞 Contato
+**From Brazil, to the world**
 
-- **Email**: samisafatli@live.com
-- **LinkedIn**: [linkedin.com/in/safatlisami](https://www.linkedin.com/in/safatlisami/)
-- **GitHub**: [github.com/samisafatli](https://github.com/samisafatli)
-- **Localização**: Rio de Janeiro, Brasil
+*© 2024 Sami Safatli. All rights reserved.*
+
+</div>
