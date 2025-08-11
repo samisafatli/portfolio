@@ -6,12 +6,14 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import Cursor from "./components/Cursor";
 import "./App.css";
 
 function App() {
   return (
     <HelmetProvider>
       <div className="App">
+        <Cursor />
         <SEO />
         <Header />
         <main>

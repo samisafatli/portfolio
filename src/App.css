@@ -27,6 +27,11 @@ html {
   overflow-x: hidden;
   background: var(--black);
   overscroll-behavior: none;
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
 }
 
 body {
@@ -200,6 +205,49 @@ section {
 main {
   width: 100%;
   overflow-x: hidden;
+}
+
+/* Custom Cursor */
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-blue);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease-out, opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.cursor-dot {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: var(--primary-blue);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform 0.05s ease-out;
+}
+
+.cursor.hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  html {
+    cursor: auto !important;
+  }
+  * {
+    cursor: auto !important;
+  }
+  .cursor,
+  .cursor-dot {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
