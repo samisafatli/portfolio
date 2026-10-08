@@ -80,7 +80,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(0, 210, 255, 0.1),
+    rgba(91, 122, 140, 0.1),
     transparent
   );
   transition: left 0.5s ease;
@@ -91,7 +91,7 @@
 }
 
 .contact-link:hover {
-  color: var(--primary-blue);
+  color: var(--accent);
   border-color: var(--card-border-hover);
   transform: translateY(-5px);
   box-shadow: var(--shadow-card-hover);
@@ -104,50 +104,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 210, 255, 0.08);
-  border: 1px solid rgba(0, 210, 255, 0.25);
+  background: rgba(91, 122, 140, 0.08);
+  border: 1px solid rgba(91, 122, 140, 0.25);
   border-radius: var(--radius-sm);
-  color: var(--primary-blue);
+  color: var(--accent);
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
 
 .contact-link:hover .contact-icon {
-  background: var(--gradient-accent);
+  background: var(--accent);
   color: var(--black);
-  transform: scale(1.08) rotate(-6deg);
-  box-shadow: var(--glow);
+  transform: scale(1.08);
 }
 
 .contact-info {
   position: relative;
-}
-
-.contact-info::before {
-  content: "";
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(
-    circle,
-    rgba(0, 210, 255, 0.1) 0%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateX(-50%) translateY(0px);
-  }
-  50% {
-    transform: translateX(-50%) translateY(-10px);
-  }
 }
 
 @media (max-width: 768px) {

@@ -7,30 +7,30 @@
 }
 
 :root {
-  --primary-blue: #00d2ff;
-  --secondary-blue: #0099cc;
-  --accent-violet: #8b5cf6;
-  --dark-blue: #003d52;
-  --black: #0a0a0a;
-  --dark-gray: #1a1a1a;
-  --medium-gray: #2a2a2a;
+  /*
+   * Sober graphite + muted petrol-blue accent. No neon glow anywhere: hover
+   * states lift with plain dark shadows, not colored ones. Don't introduce a
+   * second hue — use --accent-dim for a darker step of the same color.
+   */
+  --accent: #5b7a8c;
+  --accent-dim: #44606e;
+  --black: #121212;
+  --dark-gray: #1c1c1c;
+  --medium-gray: #262626;
   --light-gray: #3a3a3a;
-  --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
-  --text-accent: #00d2ff;
-  --glow: 0 0 20px rgba(0, 210, 255, 0.3);
-  --glow-strong: 0 0 30px rgba(0, 210, 255, 0.5);
+  --text-primary: #e8e6e2;
+  --text-secondary: #8f8f8d;
+  --text-accent: #5b7a8c;
 
-  --gradient-accent: linear-gradient(135deg, var(--primary-blue), var(--accent-violet));
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-bg-hover: rgba(255, 255, 255, 0.05);
   --card-border: rgba(255, 255, 255, 0.08);
-  --card-border-hover: rgba(0, 210, 255, 0.4);
+  --card-border-hover: rgba(91, 122, 140, 0.45);
   --radius-lg: 20px;
   --radius-md: 14px;
   --radius-sm: 8px;
   --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.35);
-  --shadow-card-hover: 0 20px 45px rgba(0, 0, 0, 0.45), 0 0 40px rgba(0, 210, 255, 0.08);
+  --shadow-card-hover: 0 16px 36px rgba(0, 0, 0, 0.4);
 }
 
 html {
@@ -86,23 +86,10 @@ body {
   z-index: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(0, 210, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 210, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: radial-gradient(ellipse 100% 100% at 50% 0%, black 40%, transparent 80%);
-}
-
-.App::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(45rem 30rem at 12% 8%, rgba(0, 210, 255, 0.1), transparent 60%),
-    radial-gradient(40rem 28rem at 88% 32%, rgba(139, 92, 246, 0.1), transparent 60%),
-    radial-gradient(40rem 30rem at 15% 72%, rgba(139, 92, 246, 0.08), transparent 60%),
-    radial-gradient(45rem 32rem at 85% 95%, rgba(0, 210, 255, 0.08), transparent 60%);
 }
 
 .App > * {
@@ -129,15 +116,14 @@ body {
   font-weight: 600;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--primary-blue);
+  color: var(--accent);
 }
 
 .section-kicker::before {
   content: "";
   width: 24px;
   height: 1px;
-  background: var(--primary-blue);
-  box-shadow: var(--glow);
+  background: var(--accent);
 }
 
 .section-title {
@@ -147,10 +133,7 @@ body {
   margin-bottom: 3.5rem;
   position: relative;
   padding-top: 0.75rem;
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
   font-family: "JetBrains Mono", monospace;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -164,19 +147,18 @@ body {
   transform: translateX(-50%);
   width: 60px;
   height: 2px;
-  background: var(--gradient-accent);
-  box-shadow: var(--glow);
+  background: var(--accent);
 }
 
 .btn {
   display: inline-block;
   padding: 14px 32px;
   background: transparent;
-  color: var(--primary-blue);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 600;
   font-family: "JetBrains Mono", monospace;
-  border: 2px solid var(--primary-blue);
+  border: 2px solid var(--accent);
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -196,7 +178,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(0, 210, 255, 0.2),
+    rgba(91, 122, 140, 0.2),
     transparent
   );
   transition: left 0.5s;
@@ -208,25 +190,25 @@ body {
 
 .btn:hover {
   color: var(--black);
-  background: var(--primary-blue);
-  box-shadow: var(--glow-strong);
+  background: var(--accent);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   transform: translateY(-2px);
 }
 
 .btn-primary {
-  background: var(--primary-blue);
+  background: var(--accent);
   color: var(--black);
 }
 
 .btn-primary:hover {
   background: transparent;
-  color: var(--primary-blue);
+  color: var(--accent);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* Scrollbar Styling */
@@ -239,17 +221,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-blue);
+  background: var(--accent);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-blue);
+  background: var(--accent-dim);
 }
 
 /* Selection */
 ::selection {
-  background: var(--primary-blue);
+  background: var(--accent);
   color: var(--black);
 }
 
@@ -269,7 +251,7 @@ main {
   position: fixed;
   width: 20px;
   height: 20px;
-  border: 2px solid var(--primary-blue);
+  border: 2px solid var(--accent);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -282,7 +264,7 @@ main {
   position: fixed;
   width: 4px;
   height: 4px;
-  background: var(--primary-blue);
+  background: var(--accent);
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;

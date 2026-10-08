@@ -41,27 +41,8 @@
   align-items: center;
   justify-content: center;
   background: var(--black);
+  border: 1px solid var(--light-gray);
   position: relative;
-  box-shadow: var(--glow);
-}
-
-.avatar-ring::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  padding: 2px;
-  background: var(--gradient-accent);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: spin 6s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .avatar-initials {
@@ -69,51 +50,17 @@
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 1px;
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
 }
 
 .name {
   font-size: 5rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  color: var(--text-primary);
   font-family: "JetBrains Mono", monospace;
   letter-spacing: 4px;
   text-transform: uppercase;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--text-primary) 50%,
-    var(--primary-blue) 100%
-  );
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation:
-    nameGlow 3s ease-in-out infinite,
-    textShimmer 4s linear infinite;
-}
-
-@keyframes nameGlow {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 10px rgba(0, 210, 255, 0.3));
-  }
-  50% {
-    filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.6));
-  }
-}
-
-@keyframes textShimmer {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
 }
 
 .title {
@@ -145,7 +92,7 @@
   color: var(--text-secondary);
   font-weight: 300;
   position: relative;
-  border-left: 2px solid var(--primary-blue);
+  border-left: 2px solid var(--accent);
   padding-left: 2rem;
   margin-top: 2rem;
 }
@@ -163,7 +110,7 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  color: var(--primary-blue);
+  color: var(--accent);
   font-size: 2rem;
   animation: bounce 2s infinite;
 }

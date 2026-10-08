@@ -38,8 +38,8 @@
   height: 3px;
   background: linear-gradient(
     90deg,
-    var(--primary-blue),
-    var(--secondary-blue)
+    var(--accent),
+    var(--accent-dim)
   );
   transform: scaleX(0);
   transform-origin: left;
@@ -76,7 +76,7 @@
   left: 0;
   width: 30px;
   height: 2px;
-  background: var(--primary-blue);
+  background: var(--accent);
   transition: width 0.3s ease;
 }
 
@@ -109,7 +109,7 @@
 
 .skill-tag-icon {
   font-size: 1rem;
-  color: var(--primary-blue);
+  color: var(--accent);
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
@@ -128,7 +128,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(0, 210, 255, 0.1),
+    rgba(91, 122, 140, 0.1),
     transparent
   );
   transition: left 0.5s ease;
@@ -139,10 +139,9 @@
 }
 
 .skill-tag:hover {
-  color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  color: var(--accent);
+  border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 210, 255, 0.2);
 }
 
 @media (max-width: 768px) {

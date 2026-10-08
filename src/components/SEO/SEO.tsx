@@ -45,8 +45,8 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
-      <meta name="theme-color" content="#00d2ff" />
-      <meta name="msapplication-TileColor" content="#00d2ff" />
+      <meta name="theme-color" content="#5b7a8c" />
+      <meta name="msapplication-TileColor" content="#5b7a8c" />
       <meta name="application-name" content={SEO_CONSTANTS.siteName} />
 
       <link rel="canonical" href={url} />
