@@ -32,6 +32,49 @@
   z-index: 2;
 }
 
+.avatar-ring {
+  width: 108px;
+  height: 108px;
+  margin: 0 auto 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  position: relative;
+  box-shadow: var(--glow);
+}
+
+.avatar-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 2px;
+  background: var(--gradient-accent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar-initials {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .name {
   font-size: 5rem;
   font-weight: 800;
@@ -145,6 +188,16 @@
   .header {
     padding: 4rem 0;
     min-height: 80vh;
+  }
+
+  .avatar-ring {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 1.5rem;
+  }
+
+  .avatar-initials {
+    font-size: 1.7rem;
   }
 
   .name {

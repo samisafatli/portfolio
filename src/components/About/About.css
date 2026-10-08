@@ -1,5 +1,5 @@
 .about {
-  padding: 8rem 0;
+  padding: 6rem 0;
   background: transparent;
   position: relative;
   width: 100%;
@@ -52,9 +52,13 @@
 }
 
 .stat {
-  background: var(--medium-gray);
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 1.5rem;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,8 +87,9 @@
 
 .stat:hover {
   transform: translateX(10px);
-  border-color: var(--primary-blue);
-  box-shadow: -5px 0 15px rgba(0, 210, 255, 0.1);
+  background: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .stat h3 {

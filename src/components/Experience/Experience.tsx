@@ -6,6 +6,7 @@ const Experience: React.FC = () => {
   return (
     <section id="experience" className="experience">
       <div className="container">
+        <span className="section-kicker">02 / Where I've worked</span>
         <h2 className="section-title">{EXPERIENCE_CONSTANTS.sectionTitle}</h2>
         <div className="timeline">
           {EXPERIENCE_CONSTANTS.experiences.map((exp, index) => (

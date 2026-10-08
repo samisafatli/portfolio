@@ -7,6 +7,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
+        <span className="section-kicker">05 / Get in touch</span>
         <h2 className="section-title">{CONTACT_CONSTANTS.heading}</h2>
         <div className="contact-content">
           <div className="contact-info">

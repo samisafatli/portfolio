@@ -6,6 +6,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="about">
       <div className="container">
+        <span className="section-kicker">01 / Who I am</span>
         <h2 className="section-title">{ABOUT_CONSTANTS.sectionTitle}</h2>
         <div className="about-content">
           <div className="about-text">

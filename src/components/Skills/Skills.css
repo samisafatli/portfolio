@@ -1,5 +1,5 @@
 .skills {
-  padding: 8rem 0;
+  padding: 6rem 0;
   background: transparent;
   position: relative;
   width: 100%;
@@ -17,9 +17,13 @@
 }
 
 .skill-category {
-  background: var(--medium-gray);
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 2.5rem;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,8 +52,9 @@
 
 .skill-category:hover {
   transform: translateY(-5px);
-  border-color: var(--primary-blue);
-  box-shadow: 0 20px 40px rgba(0, 210, 255, 0.1);
+  background: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .category-title {
@@ -86,16 +91,31 @@
 }
 
 .skill-tag {
-  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.02);
   color: var(--text-secondary);
-  padding: 0.8rem 1.5rem;
+  padding: 0.65rem 1.25rem;
   border: 1px solid var(--light-gray);
+  border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 500;
   font-family: "JetBrains Mono", monospace;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+}
+
+.skill-tag-icon {
+  font-size: 1rem;
+  color: var(--primary-blue);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.skill-tag:hover .skill-tag-icon {
+  transform: scale(1.15);
 }
 
 .skill-tag::before {
