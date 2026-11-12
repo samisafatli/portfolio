@@ -1,3 +1,4 @@
+import { useLanguage } from "../../Language";
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { SEO_CONSTANTS } from "./constants";
@@ -19,28 +20,30 @@ const SEO: React.FC<SEOProps> = ({
   url = SEO_CONSTANTS.defaultUrl,
   type = "website",
 }) => {
+  const { language, t } = useLanguage();
+  const localizedDescription = language === "pt" && description === SEO_CONSTANTS.defaultDescription ? "Sami Safatli, engenheiro de software com mais de 7 anos de experiência em desenvolvimento web e mobile com React, React Native, Node.js e TypeScript." : description;
   const fullTitle = title
     ? `${title} | ${SEO_CONSTANTS.siteName}`
-    : SEO_CONSTANTS.defaultTitle;
+    : language === "pt" ? "Sami Safatli | Engenheiro de Software" : SEO_CONSTANTS.defaultTitle;
 
   return (
     <Helmet>
       <title>{fullTitle}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={localizedDescription} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={SEO_CONSTANTS.author} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content="index, follow" />
-      <meta name="language" content="English" />
+      <meta name="language" content={language === "pt" ? "Portuguese" : "English"} />
       <meta name="revisit-after" content="7 days" />
 
       <meta property="og:type" content={type} />
       <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={localizedDescription} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
       <meta property="og:site_name" content={SEO_CONSTANTS.siteName} />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale" content={language === "pt" ? "pt_BR" : "en_US"} />
 
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -69,7 +72,7 @@ const SEO: React.FC<SEOProps> = ({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Sami Safatli",
-          jobTitle: "Software Engineer",
+          jobTitle: t("Software Engineer"),
           url: url,
           image: image,
           sameAs: [
